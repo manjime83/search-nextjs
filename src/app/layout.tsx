@@ -2,6 +2,7 @@ import { Icons } from "@/components/Icons";
 import SearchBar from "@/components/SearchBar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Suspense } from "react";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -47,7 +48,9 @@ export default function RootLayout({
                 related results.
               </p>
               <div className="flex flex-col w-full max-w-2xl mx-auto mt-16">
-                <SearchBar />
+                <Suspense>
+                  <SearchBar />
+                </Suspense>
                 {children}
               </div>
             </div>

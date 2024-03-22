@@ -33,8 +33,8 @@ export default async function Search({ searchParams: { query } }: Props) {
         <X className="mx-auto text-gray-400 size-8" />
         <h3 className="mt-2 text-sm font-semibold text-gray-900">No results</h3>
         <p className="mx-auto mt-1 text-sm text-gray-500 max-w-prose">
-          We couldn't find any products with the search term <span className="font-medium text-green-600">{query}</span>
-          . Try searching for something else.
+          We couldn&apos;t find any products with the search term
+          <span className="font-medium text-green-600">{query}</span>. Try searching for something else.
         </p>
       </div>
     );
